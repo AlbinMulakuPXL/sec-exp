@@ -14,4 +14,10 @@ Dynamic application security testing (DAST) is a non functional testing process 
 ```
 `DaST Tools`
 - Owasp ZAP
-- Acunetix
+- Acunetix 
+
+## Lab
+```
+The first step is to setup a VM in order to install Jenkins 
+then to configure the pipeline
+```
