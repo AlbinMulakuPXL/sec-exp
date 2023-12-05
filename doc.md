@@ -67,3 +67,33 @@ Authentication and session management constitute core components of modern web a
 ```
 So for this room we tried to register as "darren" but this user already exists, but if we were to register as " darren" (so with a space before the name) it would allow us to register and also with the same rights and privileges as "darren" only now with our email and password and this led us to the flag.
 ```
+
+## Software and Data Integrity failures
+```
+When talking about integrity, we refer to the capacity we have to ascertain that a piece of data remains unmodified. Integrity is essential in cybersecurity as we care about maintaining important data free from unwanted or malicious modifications.
+```
+
+```
+For example the simplest method you can use to verify the integrity of data is that you will often see a hash sent alongside the file so that you can prove that the file you downloaded kept its integrity and wasn't modified in transit. A hash or digest is simply a number that results from applying a specific algorithm over a piece of data.
+```
+
+## Security Logging and Monitoring Failures
+```
+When web applications are set up, every action performed by the user should be logged. Logging is important because, in the event of an incident, the attackers' activities can be traced. Once their actions are traced, their risk and impact can be determined. Without logging, there would be no way to tell what actions were performed by an attacker if they gain access to particular web applications. The more significant impacts of these include:
+```
+
+- Regulatory damage: if an attacker has gained access to personally identifiable user information and there is no record of this, final users are affected, and the application owners may be subject to fines or more severe actions depending on regulations.
+- Risk of further attacks: an attacker's presence may be undetected without logging. This could allow an attacker to launch further attacks against web application owners by stealing credentials, attacking infrastructure and more.
+
+```
+This challenge was simple, all we needed to do was to download the log file and find which IP address reoccurs most often. Which we can then also derive that it is a Brute Force attack.
+```
+
+## Server-Side Request Forgery
+```
+This type of vulnerability occurs when an attacker can coerce a web application into sending requests on their behalf to arbitrary destinations while having control of the contents of the request itself. SSRF vulnerabilities often arise from implementations where our web application needs to use third-party services.
+```
+
+```
+
+```
