@@ -45,5 +45,25 @@ One example of such a vulnerability was allegedly used when Patreon got hacked i
 ```
 
 ```
-So for this room we entered the console of the given website of the challenge and we got to play around for a little bit with the python commands 
+So for this room we entered the console of the given website of the challenge and we got to play around for a little bit with the python commands.
+```
+
+## Vulnerable and outdated components
+```
+Occasionally, you may find that the company/entity you're pen-testing is using a program with a well-known vulnerability.
+
+For example, let's say that a company hasn't updated their version of WordPress for a few years, and using a tool such as WPScan, you find that it's version 4.6. Some quick research will reveal that WordPress 4.6 is vulnerable to an unauthenticated remote code execution(RCE) exploit, and even better, you can find an exploit already made on Exploit-DB.
+```
+
+```
+In this challenge we exploited an outdated CSE Bookstore version, we used exploit-DB to try and find an exploit for this particular version. And after running the script we have access to information that shouldn't be public. For us that means we found the flag.
+```
+
+## Identification and Authentication Failures
+```
+Authentication and session management constitute core components of modern web applications. Authentication allows users to gain access to web applications by verifying their identities. The most common form of authentication is using a username and password mechanism. A user would enter these credentials, and the server would verify them. The server would then provide the users' browser with a session cookie if they are correct. A session cookie is needed because web servers use HTTP(S) to communicate, which is stateless. Attaching session cookies means the server will know who is sending what data. The server can then keep track of users' actions. 
+```
+
+```
+So for this room we tried to register as "darren" but this user already exists, but if we were to register as " darren" (so with a space before the name) it would allow us to register and also with the same rights and privileges as "darren" only now with our email and password and this led us to the flag.
 ```
