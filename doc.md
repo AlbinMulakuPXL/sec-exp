@@ -95,5 +95,10 @@ This type of vulnerability occurs when an attacker can coerce a web application 
 ```
 
 ```
+For this lab, the first question that it asks for is the host that is allowed in the Admin Area. to find this answer we need to navigate to that page. Look for the three bars in the upper right and click on it. After that we can try and open the 'Admin Area' page but it give the following error message 'Admin interface only available from localhost!!!'
 
+The next question asks for the server parameter for the resume download. and if we inspect the button we can find that it goes to 'secure-file-storage.com'
+
+For the next and final question, we have to use SSRF, to make the application send the request to your AttackBox instead of the secure file storage.
+We can use a netcat listener to intercept traffic. And we can see the flag.
 ```
